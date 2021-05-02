@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>omogi's beliefs</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="ideology.css" />
+    <link
+      rel="stylesheet"
+      href="//use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header>
+      <nav>
+        <ul id="navbar">
+          <div class="nav-pages">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="designers.html">Designers</a></li>
+          </div>
+        </ul>
+      </nav>
+      <span class="logo"
+        ><img src="images/logo.png" height="55" width="205"
+      /></span>
+      <span class="bag-icon"><i class="fas fa-shopping-bag"></i></span>
+    </header>
+
+    <!--SLIDER-->
+    <div class="slider-container">
+      <i class="fas fa-chevron-circle-left" id="prev"></i>
+      <i class="fas fa-chevron-circle-right" id="next"></i>
+      <div class="slider">
+        <img src="images/slider5.jpg" id="lastPicture" />
+        <img src="images/slider1.jpg" />
+        <img src="images/slider3.jpg" />
+        <img src="images/slider4.jpg" />
+        <img src="images/slider5.jpg" />
+        <img src="images/slider1.jpg" id="firstPicture" />
+      </div>
+    </div>
+
+    <!--MIDDLE SECTION-->
+    <article class="top-text">
+      Every great design begins with an even better story.
+    </article>
+    <div class="omogi-info-text">
+      <p class="text-info">
+        Omogi believes in the power of stories and believes that everyone has a
+        story to tell. We choose to tell these stories through clothes. <br />
+        Read down below how we produce the items and where we source our
+        materials. You'll find out that we advocate for fair trade.
+      </p>
+      <p class="text-info">
+        Our beanies+hoodies season is almost over. So it's time for a new
+        challenge. We're thinking t-shirts! Sometimes we set limits, this time
+        is all up to you.. except we do have a theme :) <br />
+        The colours, the style, the patterns, the shape is all you. We just want
+        to see something related to anime on it. <br />
+        You have no limits as to what - it can be a character, a vibe, a
+        weapon.. or even a quote!
+      </p>
+      <p class="text-info">
+        Speaking of quotes - we have a random generator down below to get you
+        inspired! See you soon!
+      </p>
+    </div>
+
+    <!--API-->
+    <section id="anime-quotes">
+      <div class="btn-anime">
+        <button id="anime-submit" onclick="renderNewQuote();">
+          Generate a Quote!
+        </button>
+      </div>
+      <div id="quote-display"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="first-row">
+          <h3>About us</h3>
+          <ul>
+            <li><a href="#">The team</a></li>
+            <li><a href="#">Our beliefs</a></li>
+            <li><a href="#">The designers</a></li>
+          </ul>
+        </div>
+        <div class="second-row">
+          <h3>Need help?</h3>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+        <div class="newsletter-section">
+          <h3>Newsletter</h3>
+          <p>
+            Want to see all the new designers entering the stage? <br />Want to
+            find out about all of our new products and offers? <br />
+            Subscribe to our newsletter here!
+          </p>
+          <input type="email" placeholder="Enter your email address" />
+          <button id="button-newsletter" onclick="btnNewsletter();">
+            <i class="fa fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+      <div class="footer-ending">
+        <div class="socials">
+          <a href="#"><i class="fab fa-instagram"></i></a
+          ><a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="copyright-text"><p>Omogi © 2021</p></div>
+      </div>
+    </footer>
+    <script src="ideology.js"></script>
+  </body>
+</html>

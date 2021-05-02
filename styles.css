@@ -1,0 +1,157 @@
+/* GLOBAL */
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap");
+
+* {
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV BAR */
+header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7efef;
+  margin: 0;
+  z-index: auto;
+}
+nav {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+}
+nav a {
+  color: black !important;
+}
+#navbar {
+  font-size: 22px;
+  padding: 0;
+  margin-left: 8rem;
+  text-align: center;
+}
+.nav-pages > li {
+  display: inline-block;
+  padding: 0px 20px;
+  transition: 0.4s;
+}
+.nav-pages > li:hover {
+  border-bottom: 0.5px solid black;
+}
+.logo {
+  margin-right: 14rem;
+}
+.bag-icon {
+  font-size: 26px;
+  margin-right: 10rem;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-pages > li {
+    font-size: 19px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    padding-bottom: 1.5rem;
+  }
+  .bag-icon {
+    position: relative;
+    padding-top: 0.3rem;
+    margin-right: 1.4rem;
+  }
+  ul {
+    display: inline;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .logo {
+    display: none;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .logo {
+    margin-left: 10rem;
+  }
+}
+
+/* end of nav bar */
+
+/* FOOTER */
+
+footer {
+  width: 100vw;
+  padding: 18px 0;
+  box-sizing: border-box;
+  background-color: #f3e9e9;
+}
+
+.first-row,
+.second-row,
+.copyright-text,
+.newsletter-section {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+}
+.footer-container a {
+  color: #7c5b86 !important;
+}
+
+.first-row > ul {
+  margin: 0;
+  padding: 0;
+}
+.second-row > ul {
+  margin: 0;
+  padding: 0;
+}
+
+.newsletter-section > p {
+  color: #7c5b86;
+}
+
+.footer-social {
+  display: inline-block;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-ending {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.3rem;
+}
+
+.footer-ending > a {
+  text-decoration: none;
+}
+
+.socials {
+  font-size: 20px;
+  margin-right: 0.8rem;
+  font-size: 20px;
+  color: #7c5b86;
+}
+
+.copyright-text > p {
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+}
+/* end of footer */

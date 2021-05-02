@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+/* FRONT IMAGES AND INFO STYLINg */
+
+body {
+  background-color: #f7efef;
+}
+
+.images-hidden {
+  display: none;
+}
+
+.images-hidden img:first-child {
+  display: block;
+}
+
+#designers-info {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.5rem;
+}
+
+#info-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 4px solid white;
+  margin-left: 0.8rem;
+  padding: 10px 50px 0;
+  transition: 0.4s;
+}
+
+#info-text-container:hover {
+  background-color: #fff;
+  border: 3px solid #7c5b86;
+}
+
+.info-text {
+  text-align: justify;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+}
+
+.info-text > h4 {
+  color: #7c5b86;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.info-text > p {
+  font-size: 19px;
+  color: #7c5b86;
+}
+
+@media screen and (max-width: 700px) {
+  #designers-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #designers-info > img {
+    display: none;
+  }
+}
+
+/* SECONDARY STYLING */
+#secondary-designers {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.9rem 0 0.5rem 0;
+}
+.button-designer {
+  background-image: url(images/buttondesign.jpg);
+  background-repeat: no-repeat;
+  padding-top: 0.7rem;
+}
+
+.button-designer > h3 {
+  font-size: 36px;
+  font-family: "Rajdhani", sans-serif;
+  color: rgb(66, 49, 62);
+  padding: 0 10px;
+  margin: 15px 10px;
+}
+
+.button-designer > button {
+  font-size: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  background: linear-gradient(140deg, #e7bff3, #f7efef);
+  margin: 25px 25px;
+  padding: 10px 10px;
+  transition: 0.2s ease;
+}
+
+.button-designer > button:hover {
+  transform: translate(7px);
+  background: linear-gradient(140deg, #f7efef, #7c5b86);
+}

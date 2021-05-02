@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  font-family: "Rajdhani", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+#submit-form {
+  display: flex;
+  height: 60vw;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container {
+  width: 500px;
+  max-width: 100%;
+}
+
+.form {
+  background-color: #f1cad2;
+  border-radius: 4px;
+  box-shadow: 2px 3px 6px white;
+}
+
+h2 {
+  color: #6a4d74;
+  font-size: 20px;
+  border-bottom: 1px solid #6a4d74;
+}
+label {
+  font-size: 20px;
+  display: inline-block;
+}
+
+.form-lines {
+  margin-bottom: 0.8rem;
+  padding-bottom: 18px;
+  position: relative;
+}
+
+.form-lines input {
+  border: 2px solid #6a4d74;
+  border-radius: 3px;
+  display: block;
+  width: 100%;
+  padding: 6px 23px;
+}
+
+.form-lines input:focus {
+  outline: 0;
+}
+
+.form-lines.success input {
+  border-color: rgb(85, 190, 85);
+}
+
+.form-lines.error input {
+  border-color: rgb(190, 85, 85);
+}
+
+.form-lines i {
+  position: absolute;
+  visibility: hidden;
+  top: 35px;
+  right: 10px;
+}
+
+.form-lines.form-lines.success i.fa-check {
+  visibility: visible;
+  color: rgb(85, 190, 85);
+}
+
+.form-lines.error i.fa-exclamation {
+  visibility: visible;
+  color: rgb(190, 85, 85);
+}
+
+.form-lines small {
+  position: absolute;
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+}
+
+.form-lines.error small {
+  visibility: visible;
+  color: rgb(190, 85, 85);
+}
+
+.form-container button {
+  width: 70%;
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(140deg, #ebb3e3, #f7efef);
+  border-radius: 4px;
+  transition: 0.4s;
+}
+
+.form-container button:hover {
+  background: linear-gradient(140deg, #f7efef, #ebb3e3);
+}
+
+@media screen and (max-width: 700px) {
+  .form-lines {
+    size: 50%;
+  }
+  #submit-form {
+    height: initial;
+    width: initial;
+    size: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #submit-form {
+    height: initial;
+    width: initial;
+    size: 50%;
+  }
+}
