@@ -37,18 +37,18 @@ if (sliderImages[counter].id === 'firstPicture'){
   })
 
   
-  
- function generateQuote() {
-    return fetch('https://animechan.vercel.app/api/random')
-    .then(res => res.json())
-    .then(({quote}) => quote);
-  }
-  async function renderNewQuote() {
-    document.querySelector("#quote-display").textContent = await generateQuote()
-}
-
+  async function generateQuote() {
+    const response = await 
+    fetch('https://animechan.vercel.app/api/random');
+    const data = await response.json();
+    const {anime, character, quote} = data;
+    document.querySelector("#anime-display").textContent = anime;
+    document.querySelector("#quote-display").textContent = quote;
+    document.querySelector("#character-display").textContent = character;
+    console.log(data);
+  };
 
 
 function btnNewsletter() {
-  alert('Thank you! We will keep you updated.')
+ alert('Thank you! We will keep you updated.')
 }

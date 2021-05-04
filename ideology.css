@@ -79,12 +79,22 @@ body {
 
 /* ANIME QUOTES */
 
-#quote-display {
-  font-size: 23px;
+#quote-display,
+#anime-display,
+#character-display {
+  font-size: 20px;
   font-family: "Roboto Condensed", sans-serif;
   border-bottom: 1px solid black;
   text-align: center;
   margin-top: 1rem;
+}
+
+.display-names {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 19px;
+  color: rgb(128, 49, 128);
+  font-weight: bold;
+  text-align: center;
 }
 
 #anime-submit {
